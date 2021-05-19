@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.ri {
+  float: right;
+}
+.le {
+  float: left;
+}
+header .top-top-top {
+  box-shadow: 4px 4px 4px rgba(34, 33, 33, 0.1);
+}
+header .top-top {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+}
+header .top-top img {
+  width: 260px;
+  height: 100px;
+}
+header .top-top ul li {
+  line-height: 100px;
+  float: left;
+  margin-left: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+}
+header .top-top ul li:hover {
+  color: red;
+}
+header .top-top .zhuce {
+  margin-top: 50px;
+  transform: translateY(-50%);
+  border: 1px solid #FB6D5B;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+header .top-top .zhuce a {
+  color: #FB6D5B;
+}
+header .top-top .fangdajing {
+  width: 26px;
+  height: 26px;
+  margin-top: 50px;
+  transform: translateY(-50%);
+  margin-right: 50px;
+}
+header .top-top .fangdajing img {
+  width: 26px;
+  height: 26px;
+}
+section {
+  width: 100%;
+  margin: 0px auto;
+  background-color: #dfdfdf;
+  overflow: auto;
+  padding-bottom: 30px;
+}
+section #guid_Details_p {
+  width: 1200px;
+  margin: 20px auto;
+  color: #A8A8A8;
+}
+section .guid_Details_div {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 50px 0;
+}
+section .guid_Details_div .guid_Details_nav {
+  width: 850px;
+  background-color: red;
+  height: 20px;
+}
+section .guid_Details_div .guid_Details_img {
+  width: 320px;
+  height: 20px;
+  background-color: red;
+}
