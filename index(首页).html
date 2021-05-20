@@ -180,7 +180,7 @@
                 <a href="">
                     <div>
                         <img src="./img/bg1.jpg" alt="">
-                        <p>空气净化器里面学问多得惊呆你<br/>，你选对了吗？</p>
+                        <p>空气净化器里面学问多得惊呆你<br />，你选对了吗？</p>
                         <p>● 苏苏</p>
                         <div class="baogao">
                             <img src="./img/reply.png" alt="">&nbsp;&nbsp;<span>3</span>
@@ -232,7 +232,7 @@
                 <a href="">
                     <div>
                         <img src="./img/bg1.jpg" alt="">
-                        <p>空气净化器里面学问多得惊呆你<br/>，你选对了吗？</p>
+                        <p>空气净化器里面学问多得惊呆你<br />，你选对了吗？</p>
                         <p>● 苏苏</p>
                         <div class="baogao">
                             <img src="./img/reply.png" alt="">&nbsp;&nbsp;<span>3</span>
@@ -750,9 +750,9 @@
                 <img src="./img/code.png" alt="">
                 <div class="le">
                     <img src="./img/logoImg.jpg" alt="">
-                    <p>全球酷玩试用导购平台<br/> 酷&nbsp;新奇&nbsp;好玩&nbsp;品质
+                    <p>全球酷玩试用导购平台<br /> 酷&nbsp;新奇&nbsp;好玩&nbsp;品质
                     </p>
-                    <p>微信添加“JguoJguo”<br/> 获取我们的服务。
+                    <p>微信添加“JguoJguo”<br /> 获取我们的服务。
                     </p>
                 </div>
 
@@ -803,8 +803,8 @@
             </div>
             <p class="footer_div">
                 <a href="">
-            &copy:2020 极果版权所有
-           </a>
+                    &copy:2020 极果版权所有
+                </a>
             </p>
         </div>
     </footer>
@@ -820,56 +820,56 @@
 <script id="li_tmpl" type="text/x-dot-template">
     <!--  <!-- 6、展示数据 -->
     {{~it:value:index}}
-    <li>
-        <p>{{=value.imgtitle}}</p>
-        <img src="{{=value.imgurl}}" alt="">
-        <div>
-            {{=value.note}}
-        </div>
-    </li>
-    {{~}} -->
+<li>
+    <p>{{=value.imgtitle}}</p>
+    <img src="{{=value.imgurl}}" alt="">
     <div>
-        <img src="./img/k1.jpg" alt="">
-        <p>SCiO 微型光谱仪</p>
-        <p>可以测定食物成分及营养</p>
-        <p>￥ 1212</p>
-        <div class="baogao">
-            <img src="./img/reply.png" alt="">&nbsp;&nbsp;<span>3</span>
-        </div>
-        <div class="baogao2">
-            <img src="./img/zan.png" alt="">&nbsp;&nbsp;<span>3</span>
-        </div>
+        {{=value.note}}
     </div>
+</li>
+{{~}} -->
+<div>
+    <img src="./img/k1.jpg" alt="">
+    <p>SCiO 微型光谱仪</p>
+    <p>可以测定食物成分及营养</p>
+    <p>￥ 1212</p>
+    <div class="baogao">
+        <img src="./img/reply.png" alt="">&nbsp;&nbsp;<span>3</span>
+    </div>
+    <div class="baogao2">
+        <img src="./img/zan.png" alt="">&nbsp;&nbsp;<span>3</span>
+    </div>
+</div>
 </script>
 <script>
     /* 焦点图 */
     var mySwiper = new Swiper('.swiper-container', {
-            direction: 'horizontal', // 水平切换选项
-            loop: true, // 循环模式选项
-            slidesPerView: 4,
-            slidesPerGroup: 4,
-            slidesPerGroupSkip: 4,
-            spaceBetween: 30,
-            autoplay: {
-                delay: 2000,
-            }, //自动播放
-            speed: 2000,
+        direction: 'horizontal', // 水平切换选项
+        loop: true, // 循环模式选项
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        slidesPerGroupSkip: 4,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 2000,
+        }, //自动播放
+        speed: 2000,
 
-            // 如果需要分页器
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
 
-            // 如果需要前进后退按钮
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        })
-        //鼠标滑过pagination控制swiper切换
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+    //鼠标滑过pagination控制swiper切换
     for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
-        mySwiper.pagination.bullets[i].onmouseover = function() {
+        mySwiper.pagination.bullets[i].onmouseover = function () {
             this.click();
         };
     }
