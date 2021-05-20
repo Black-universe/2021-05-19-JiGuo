@@ -109,7 +109,7 @@ section #new_nav li {
 section #new_nav li a {
   color: #ACACAE;
 }
-section #new_nav li:first-child {
+section #new_nav li:last-child {
   border-bottom: 4px solid #ff0000;
 }
 section #new_nav li:hover {

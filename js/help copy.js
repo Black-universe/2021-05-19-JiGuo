@@ -15,7 +15,11 @@ var help_nav_div_center_four = document.getElementsByClassName('help_nav_div_cen
 
 //     })
 // }
+// new_nav[1].style.borderColor = 'red';
+
+
 help_nav_ul[0].style.color = 'black';
+
 help_nav_ul[0].addEventListener('click', function() {
     help_nav_div_center_one.style.display = 'block';
     help_nav_div_center_one.style.display = 'flex';
