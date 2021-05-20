@@ -160,3 +160,124 @@ section .guid_Details_div .guid_Details_nav .guid_Details_nav_div a {
 section .guid_Details_div .guid_Details_nav .guid_Details_nav_div a:hover {
   color: red;
 }
+footer .foot {
+  width: 100%;
+  background-color: #505050;
+  overflow: auto;
+}
+footer .foot .foot-one {
+  width: 1200px;
+  height: 260px;
+  margin: 30px auto;
+}
+footer .foot .foot-one .ul-one {
+  float: left;
+}
+footer .foot .foot-one .ul-one li {
+  float: left;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin-left: 100px;
+}
+footer .foot .foot-one img {
+  width: 180px;
+  height: 180px;
+  float: left;
+}
+footer .foot .foot-one div:nth-of-type(1) {
+  width: 150px;
+  margin-left: 20px;
+}
+footer .foot .foot-one div:nth-of-type(1) img {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 25px;
+}
+footer .foot .foot-one div:nth-of-type(1) p:nth-of-type(1) {
+  font-size: 14px;
+  color: #898F97;
+}
+footer .foot .foot-one div:nth-of-type(1) p:nth-of-type(2) {
+  font-size: 14px;
+  margin-top: 25px;
+  color: #898F97;
+}
+footer .foot .foot-one div:nth-of-type(2) {
+  height: 300px;
+  float: left;
+  margin-top: 20px;
+}
+footer .foot .foot-one div:nth-of-type(2) .ul-two {
+  float: left;
+  margin-left: 100px;
+}
+footer .foot .foot-one div:nth-of-type(2) .ul-two li {
+  font-size: 14px;
+  color: #898F97;
+}
+footer .foot .foot-one div:nth-of-type(2) .ul-three {
+  float: left;
+  margin-left: 80px;
+}
+footer .foot .foot-one div:nth-of-type(2) .ul-three li {
+  font-size: 14px;
+  color: #898F97;
+}
+footer .foot .foot-one div:nth-of-type(2) .ul-four {
+  float: left;
+  margin-left: 30px;
+}
+footer .foot .foot-one div:nth-of-type(2) .ul-four li {
+  font-size: 14px;
+  color: #898F97;
+}
+footer .foot .foot-one div:nth-of-type(2) .ul-five {
+  float: left;
+  margin-left: 25px;
+}
+footer .foot .foot-one div:nth-of-type(2) .ul-five li {
+  font-size: 14px;
+  color: #898F97;
+}
+footer .foot .foot-one div:nth-of-type(2) .ul-six {
+  float: left;
+  margin-left: 30px;
+}
+footer .foot .foot-one div:nth-of-type(2) .ul-six li {
+  font-size: 14px;
+  color: #898F97;
+}
+footer .foot .footer_div {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+footer .foot .footer_div a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  line-height: 50px;
+  text-decoration: none;
+  color: #898F97;
+}
+#fan {
+  width: 50px;
+  height: 50px;
+  background-color: #e8e8e8;
+  position: fixed;
+  bottom: 59px;
+  right: 120px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#fan img {
+  width: 36px;
+  height: 20px;
+  position: absolute;
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
