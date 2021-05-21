@@ -1,0 +1,319 @@
+.bx {
+  width: 80%;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  margin-top: -50px;
+  width: 100%;
+  height: 80px;
+  background-color: #f0f0f0;
+}
+.nav .banxin {
+  max-width: 1300px;
+  width: 80%;
+  margin: 0 auto;
+  height: 50px;
+}
+.nav .banxin div {
+  margin: 20px 10px;
+  height: 40px;
+  width: 16.6%;
+  float: left;
+}
+.nav .banxin div img {
+  width: 25px;
+  display: block;
+  margin-left: 10px;
+}
+.nav .banxin div:nth-of-type(1) {
+  padding-left: 13px;
+  margin-right: 31px;
+  width: 65px;
+  border-left: 5px solid red;
+}
+main {
+  width: 100%;
+}
+main .banxin2 {
+  max-width: 1300px;
+  width: 80%;
+  margin: 20px auto;
+  height: 2276px;
+}
+main .banxin2 .zuo {
+  width: 70%;
+  float: left;
+  margin-left: 10px;
+  padding-right: 20px;
+}
+main .banxin2 .zuo .cp {
+  padding-left: 13px;
+  margin: 10px 0;
+  border-left: 5px solid red;
+}
+main .banxin2 .zuo .ch {
+  margin: 10px 0;
+  font-size: 20px;
+  color: red;
+}
+main .banxin2 .zuo .pw {
+  margin: 20px 0;
+  font-size: 17px;
+}
+main .banxin2 .zuo img {
+  margin: 20px 0;
+  width: 100%;
+}
+main .banxin2 .zuo .lan {
+  color: #1f7cca;
+}
+main .banxin2 .zuo .pww {
+  margin: 20px 0;
+  font-size: 17px;
+  color: #488aa5;
+}
+main .banxin2 .zuo .red {
+  font-weight: 600;
+  margin: 20px 0;
+  font-size: 17px;
+  color: red;
+}
+main .banxin2 .zuo span {
+  font-weight: 600;
+}
+main .banxin2 .you {
+  width: 29%;
+  float: left;
+}
+main .banxin2 .you .cp {
+  padding-left: 13px;
+  margin: 10px 0;
+  border-left: 5px solid red;
+}
+main .banxin2 .you .ch {
+  margin: 25px 0;
+  font-size: 37px;
+  color: red;
+}
+main .banxin2 .you .gm {
+  margin: 10px 0;
+  clear: both;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  cursor: pointer;
+}
+main .banxin2 .you .pw {
+  color: #666;
+  text-align: center;
+  font-size: 15px;
+}
+main .banxin2 .you img {
+  width: 100%;
+}
+main .banxin2 .you .pws {
+  color: #666;
+  font-size: 15px;
+}
+main .banxin2 .you .ct {
+  font-weight: 600;
+  color: black;
+  margin: 10px 0;
+}
+main .banxin2 .you .cpp {
+  padding-left: 13px;
+  margin: 50px 0;
+  border-left: 5px solid red;
+}
+article {
+    width: 1236px;
+    margin: 0 auto;
+}
+
+article h4 {
+      padding-left  : 13px;
+    margin: 50px 0;
+}
+article h4 span{
+  float: right;
+  color: red;
+}
+
+.a1, .a2, .a3, .a4 {
+width: 23%;
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.a1, .a2, .a3, .a4 {
+    border: 1px solid rgb(219, 212, 212);
+    border-radius: 8px;
+}
+
+.tp {
+    position: relative;
+    width: 282px;
+    height: 133px;
+}
+
+.tp img {
+    width: 100%;
+    height: 100%;
+}
+
+.tp span {
+    display: block;
+    width: 35px;
+    height: 18px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 5;
+    border-radius: 0px 9px 0px 9px;
+}
+
+
+.a1 h3 {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.a1 ul {
+    margin-left: 78px;
+}
+
+.a1 li {
+    float: left;
+    margin-left: 10px;
+    padding: 3px;
+    border: 1px solid #fbbdb6;
+    color: #fbbdb6;
+}
+
+.a1 p {
+    clear: both;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.a1 span {
+    color: #fbbdb6;
+}
+
+.a2 h3 {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.a2 ul {
+    margin-left: 78px;
+}
+
+.a2 li {
+    float: left;
+    margin-left: 10px;
+    padding: 3px;
+    border: 1px solid #95d58b;
+    color: #95d58b;
+}
+
+.a2 p {
+    clear: both;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.a2 span {
+    color: #95d58b;
+}
+
+
+
+.a3 h3 {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.a3 ul {
+    margin-left: 78px;
+}
+
+.a3 li {
+    float: left;
+    margin-left: 10px;
+    padding: 3px;
+    border: 1px solid #fbbdb6;
+    color: #fbbdb6;
+}
+
+.a3 p {
+    clear: both;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.a3 span {
+    color: #fbbdb6;
+}
+
+.a4 {}
+
+.a4 h3 {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.a4 ul {
+    margin-left: 78px;
+}
+
+.a4 li {
+    float: left;
+    margin-left: 10px;
+    padding: 3px;
+    border: 1px solid #fbbdb6;
+    color: #fbbdb6;
+}
+
+.a4 p {
+    clear: both;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.a4 span {
+    color: #fbbdb6;
+}
+
+.a5 {
+    position: absolute;
+    top: 551px;
+    left: 116px;
+}
+
+.a6 {
+    position: absolute;
+    top: 551px;
+    left: 1250px;
+}
+
+.zt {
+    clear: both;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
