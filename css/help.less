@@ -1,0 +1,296 @@
+* {
+    margin:0;
+    padding:0;
+}
+ul {
+    list-style: none;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color          : black;
+}
+
+.ri {
+    float: right;
+}
+
+.le {
+    float: left;
+}
+
+header {
+    .top-top-top{
+         box-shadow: 4px 4px 4px rgba(34, 33, 33,.1);
+    }
+    .top-top {
+        width : 1200px;
+        height: 100px;
+        margin: 0 auto;
+
+ 
+        img {
+            width : 260px;
+            height: 100px;
+        }
+
+        ul {
+            li {
+                line-height: 100px;
+                float      : left;
+                margin-left: 50px;
+                font-size  : 20px;
+                cursor     : pointer;
+                color      : black;
+
+                &:hover {
+                    color: red;
+                }
+            }
+
+        }
+
+        .zhuce {
+            margin-top   : 50px;
+            transform    : translateY(-50%);
+            border       : 1px solid #FB6D5B;
+            padding      : 7px 10px;
+            border-radius: 5px;
+        a{
+            color        : #FB6D5B;
+        }
+        }
+
+        .fangdajing {
+            width       : 26px;
+            height      : 26px;
+            margin-top  : 50px;
+            transform   : translateY(-50%);
+            margin-right: 50px;
+
+            img {
+                width : 26px;
+                height: 26px;
+            }
+        }
+    }
+}
+// 主体内容
+.main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 1000px;
+    .commont-left {
+        width: 300px;
+        height: 380px;
+        background-color: #f3f3f3;
+        padding: 35px 20px;
+        h2 {
+            text-indent: 20px;
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+        }
+        h3 {
+            margin-top: 20px;
+            text-indent: 20px;
+        }
+        p {
+            text-indent: 40px;
+            line-height: 30px;
+            color: #404139;
+        }
+    }
+    .commont-right {
+        width: 700px;
+        background-color: #f3f3f3;
+        padding: 35px;
+        h2 {
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+        }
+        h3 {
+            margin-top: 20px;
+            color: #3f4752;
+            margin-bottom: 30px
+        }
+        p {
+            line-height: 30px;
+            color: #404139;
+        }
+    }
+}
+// foot模块
+footer {
+    .foot {
+        width           : 100%;
+        background-color: #505050;
+        overflow        : auto;
+        // margin          : 30px 0px;
+
+        .foot-one {
+            width : 1200px;
+            height: 260px;
+            margin: 30px auto;
+
+            .ul-one {
+                // width: 200px;
+                float: left;
+
+                li {
+                    float      : left;
+                    font-size  : 20px;
+                    font-weight: 500;
+                    color      : white;
+                    margin-left: 100px;
+                }
+
+            }
+
+            img {
+                width : 180px;
+                height: 180px;
+                float : left;
+            }
+
+            div:nth-of-type(1) {
+                width      : 150px;
+                margin-left: 20px;
+
+                img {
+                    width        : 100%;
+                    height       : 60px;
+                    margin-bottom: 25px;
+                }
+
+                p:nth-of-type(1) {
+                    font-size: 14px;
+                    color    : #898F97;
+                }
+
+                p:nth-of-type(2) {
+                    font-size : 14px;
+                    margin-top: 25px;
+                    color     : #898F97;
+                }
+            }
+
+            div:nth-of-type(2) {
+                // width: 500px;
+                height    : 300px;
+                float     : left;
+                margin-top: 20px;
+
+                .ul-two {
+                    float      : left;
+                    margin-left: 100px;
+
+                    li {
+                        font-size: 14px;
+                        color    : #898F97;
+                    }
+                }
+
+                .ul-three {
+                    float      : left;
+                    margin-left: 80px;
+
+                    li {
+                        font-size: 14px;
+                        color    : #898F97;
+                    }
+                }
+
+                .ul-four {
+                    float      : left;
+                    margin-left: 30px;
+
+                    li {
+                        font-size: 14px;
+                        color    : #898F97;
+                    }
+                }
+
+                .ul-five {
+                    float      : left;
+                    margin-left: 25px;
+
+                    li {
+                        font-size: 14px;
+                        color    : #898F97;
+                    }
+                }
+
+                .ul-six {
+                    float      : left;
+                    margin-left: 30px;
+
+                    li {
+                        font-size: 14px;
+                        color    : #898F97;
+                    }
+                }
+            }
+
+            // div:nth-of-type(2){
+            //     width: 120px;
+            //     margin-left:20px;
+            //     p:nth-of-type(1){
+            //         font-size: 20px;
+            //         font-weight: 500;
+            //         color:white;
+            //     }
+            //     p:nth-of-type(2){
+            //         font-size: 14px;
+            //         color:#938F98;
+            //         margin-top:20px;
+            //     }
+            //     p:nth-of-type(3){
+            //         font-size: 14px;
+            //         color:#938F98;
+            //         margin-top:5px;
+            //     }
+            // }
+
+        }
+
+        .footer_div {
+            width   : 100%;
+            height  : 50px;
+            position: relative;
+
+            a {
+                position       : absolute;
+                left           : 50%;
+                transform      : translateX(-50%);
+                margin         : 0 auto;
+                line-height    : 50px;
+                text-decoration: none;
+                color          : #898F97;
+            }
+        }
+    }
+
+  
+}
+  #fan {
+        width           : 50px;
+        height          : 50px;
+        background-color: #e8e8e8;
+        position        : fixed;
+        bottom          : 59px;
+        right           : 120px;
+        border-radius   : 9px;
+        cursor          : pointer;
+    transition: all .5s;
+        img {
+            width      : 36px;
+            height     : 20px;
+            position   : absolute;
+            margin-top : 50%;
+            margin-left: 50%;
+            transform  : translate(-50%, -50%);
+        }
+    }
