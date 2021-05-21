@@ -70,7 +70,7 @@
                     var ajax_ = new XMLHttpRequest();
                     ajax_.open('get', 'http://192.168.31.219:3000/useing/master', true);
                     ajax_.send();
-                    ajax_.onreadystatechange = function() {
+                    ajax_.onreadystatechange = function () {
                         if (ajax_.readyState == 4) { // 4 代表请求已完成
                             if (ajax_.status == 200) {
                                 console.log('成功');
@@ -87,7 +87,10 @@
                     }
                 </script>
                 <script id="li_tmpl" type="text/x-dot-template">
+
                     {{~it:value:index }}
+                    {{ for (var i = 0; i <4; i++) { }} 
+                    {{ for (var j = 0; j <1; j++) { }} 
                     <div class="swiper-slide">
                         <a href="#"><img src="{{=value.img}}" alt="#"></a>
                         <p class="lunbo_p">{{=value.text}}</p>
@@ -96,6 +99,8 @@
                         <p class="lunbo_p2">剩余时间2天</p>
                         <span class="lunbo_span_1">首发</span>
                     </div>
+                    {{}}}
+                    {{}}}
                     {{~}}
                 </script>
                 <!-- <div class="swiper-slide">
@@ -645,9 +650,9 @@
                 <img src="./img/code.png" alt="">
                 <div class="le">
                     <img src="./img/logoImg.jpg" alt="">
-                    <p>全球酷玩试用导购平台<br/> 酷&nbsp;新奇&nbsp;好玩&nbsp;品质
+                    <p>全球酷玩试用导购平台<br /> 酷&nbsp;新奇&nbsp;好玩&nbsp;品质
                     </p>
-                    <p>微信添加“JguoJguo”<br/> 获取我们的服务。
+                    <p>微信添加“JguoJguo”<br /> 获取我们的服务。
                     </p>
                 </div>
 
@@ -698,8 +703,8 @@
             </div>
             <p class="footer_div">
                 <a href="">
-            &copy:2020 极果版权所有
-           </a>
+                    &copy:2020 极果版权所有
+                </a>
             </p>
         </div>
     </footer>
