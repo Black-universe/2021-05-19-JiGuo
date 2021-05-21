@@ -60,7 +60,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="">
+                <!-- <a href="">
                     <div>
                         <img src="../img/k2.jpg" alt="">
                         <p>B&O BeoSound 35 音响</p>
@@ -269,7 +269,7 @@
                             <img src="../img/xin.png" alt="">&nbsp;&nbsp;<span>3</span>
                         </div>
                     </div>
-                </a>
+                </a> -->
             </div>
             <!--/////////////////////////////////////////////////////////////////  -->
 
@@ -293,7 +293,7 @@
                     </div>
                 </a>
 
-                <a href="">
+                <!-- <a href="">
                     <div>
                         <img src="../img/k1.jpg" alt="">
                         <p>SCiO 微型光谱仪</p>
@@ -446,7 +446,7 @@
                             <img src="../img/xin.png" alt="">&nbsp;&nbsp;<span>3</span>
                         </div>
                     </div>
-                </a>
+                </a> -->
             </div>
 
             <!-- 品类 -->
@@ -607,8 +607,6 @@
                         </ul>
                     </div>
                 </div>
-
-
                 <!-- 智能穿戴 -->
 
                 <div class="play_category_live">
@@ -788,22 +786,6 @@
                         </ul>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
             <div class="jizai">
                 <img src="../img/more.png" alt="">
@@ -819,9 +801,9 @@
                 <img src="../img/code.png" alt="">
                 <div class="le">
                     <img src="../img/logoImg.jpg" alt="">
-                    <p>全球酷玩试用导购平台<br/> 酷&nbsp;新奇&nbsp;好玩&nbsp;品质
+                    <p>全球酷玩试用导购平台<br /> 酷&nbsp;新奇&nbsp;好玩&nbsp;品质
                     </p>
-                    <p>微信添加“JguoJguo”<br/> 获取我们的服务。
+                    <p>微信添加“JguoJguo”<br /> 获取我们的服务。
                     </p>
                 </div>
 
@@ -872,8 +854,8 @@
             </div>
             <p class="footer_div">
                 <a href="">
-            &copy:2020 极果版权所有
-           </a>
+                    &copy:2020 极果版权所有
+                </a>
             </p>
         </div>
     </footer>
@@ -882,3 +864,45 @@
 <script src='../js/Coldplay-new.js'></script>
 
 </html>
+<script>
+    var bodys = document.getElementsByClassName('body-ont-one')[0]
+
+    var bodyss = document.getElementsByClassName('body-ont-two')[0]
+    var ajax_ = new XMLHttpRequest() || new ActiveXObject()
+    ajax_.open('get', 'http://192.168.31.219:3000/play/new', true);
+    ajax_.send();
+    ajax_.onreadystatechange = function () {
+        if (ajax_.readyState == 4) {
+            if (ajax_.status == 200) {
+                var data = JSON.parse(ajax_.responseText)
+                var tmpText = doT.template(document.getElementById('li_tmpl').innerText);
+                bodys.innerHTML = tmpText(data);
+                bodyss.innerHTML = tmpText(data);
+            }
+        }
+    }
+</script>
+<script src="../doT.min.js"></script>
+
+
+<script id="li_tmpl" type="text/x-dot-template">
+
+
+
+{{~it:value:index}}
+<a href="">
+                    <div>
+                        <img src="{{=value.img}}</" alt="">
+                        <p>{{=value.text}}</</p>
+                        <p>{{=value.description}}</p>
+                        <p>￥ {{=value.price}}</</p>
+                        <div class="baogao">
+                            <img src="../img/reply.png" alt="">&nbsp;&nbsp;<span>{{=value.like}}</</span>
+                        </div>
+                        <div class="baogao2">
+                            <img src="../img/xin.png" alt="">&nbsp;&nbsp;<span>{{=value.words}}</</span>
+                        </div>
+                    </div>
+                </a>
+                {{~}}
+</script>
