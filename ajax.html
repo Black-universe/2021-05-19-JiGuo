@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>获取数据</button>
+</body>
+
+</html>
+<script>
+    var btn = document.querySelector('button');
+    btn.onclick = function show() {
+        var ajax_ = new XMLHttpRequest() || new ActiveXObject("Microsoft.XMLHTTP");
+        ajax_.open('get', 'http://192.168.31.219:3000/play/new', true);
+        ajax_.send();
+        ajax_.onreadystatechange = function () {
+            if (ajax_.readyState == 4) {
+                if (ajax_.status == 200) {
+                    var res = ajax_.responseText
+                    document.write(ajax_.responseText)
+                }
+            }
+        }
+    }
+
+</script>
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #list {
+            width: 400px;
+            list-style: none;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 400px;
+        }
+
+        #list>li {
+            border-bottom: 2px solid rgb(219, 218, 218);
+            padding: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <button>获取数据</button>
+    <ul id="list">
+
+    </ul>
+</body>
+
+</html>
+<script>
+    var btn = document.querySelector('button');
+    var ul = document.getElementById('list')
+    btn.onclick = function show() {
+        var ajax_ = new XMLHttpRequest() || new ActiveXObject("Microsoft.XMLHTTP");
+        ajax_.open('get', './doT.json', true);
+        ajax_.send();
+        ajax_.onreadystatechange = function () {
+            if (ajax_.readyState == 4) {
+                if (ajax_.status == 200) {
+                    var res = JSON.parse(ajax_.responseText)
+                    var tmpText = doT.template(document.getElementById('li_tmpl').innerText);
+                    ul.innerHTML = tmpText(res.list);
+                }
+            }
+        }
+    }
+
+</script>
+<script src="./doT.min.js"></script>
+
+
+<script id="li_tmpl" type="text/x-dot-template">
+    {{~it:value:index}}
+<li>
+    <p>{{=value.imgtitle}}</p>
+    <img src="{{=value.imgurl}}" alt="">
+    <div>
+        {{=value.note}}
+    </div>
+</li>
+{{~}}
+
+</script> -->
