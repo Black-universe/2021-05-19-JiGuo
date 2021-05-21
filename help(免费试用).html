@@ -61,43 +61,7 @@
                     <p class="lunbo_p2">剩余时间2天</p>
                     <span class="lunbo_span_1">首发</span>
                 </div>
-                <script>
-                    var slide_one = document.getElementsByClassName('help_nav_div_center_one')[0];
 
-                    // 渲染
-                    // http://192.168.31.219:3000
-                    // http://192.168.1.26:3000/play/new
-                    var ajax_ = new XMLHttpRequest();
-                    ajax_.open('get', 'http://192.168.31.219:3000/useing/master', true);
-                    ajax_.send();
-                    ajax_.onreadystatechange = function() {
-                        if (ajax_.readyState == 4) { // 4 代表请求已完成
-                            if (ajax_.status == 200) {
-                                console.log('成功');
-                                // 打印创建的 a.taxt里的文本内容
-                                var res = JSON.parse(ajax_.responseText);
-                                // console.log(res);
-                                /* 5.调用方式 */
-                                // var tmpText = doT.template(模板);
-                                // tmpText(数据源ajax_.responseText);
-                                var tmpText = doT.template(document.getElementById('li_tmpl').innerText);
-                                slide_one.innerHTML = tmpText(res);
-                            }
-                        }
-                    }
-                </script>
-                <script id="li_tmpl" type="text/x-dot-template">
-                    {{~it:value:index }}
-                    <div class="swiper-slide">
-                        <a href="#"><img src="{{=value.img}}" alt="#"></a>
-                        <p class="lunbo_p">{{=value.text}}</p>
-                        <div><a href="#">{{=value.totalnum}}</a><a href="#">{{=value.num}}台</a></div>
-                        <p class="lunbo_p1"><span>{{=value.apply}}</span>申请</p>
-                        <p class="lunbo_p2">剩余时间2天</p>
-                        <span class="lunbo_span_1">首发</span>
-                    </div>
-                    {{~}}
-                </script>
                 <!-- <div class="swiper-slide">
                     <a href="#"><img src="./img/hot2.jpg" alt="#"></a>
                     <p class="lunbo_p">巴慕达 The Toaster 烤面包机</p>
@@ -704,6 +668,44 @@
         </div>
     </footer>
 </body>
+<script>
+    var slide_one = document.getElementsByClassName('help_nav_div_center_one')[0];
+    var slide_three = document.getElementsByClassName('help_nav_div_center_three')[0];
+    // 渲染
+    // http://192.168.31.219:3000
+    // http://192.168.1.26:3000/play/new
+    var ajax_ = new XMLHttpRequest();
+    ajax_.open('get', 'http://192.168.31.219:3000/useing/master', true);
+    ajax_.send();
+    ajax_.onreadystatechange = function() {
+        if (ajax_.readyState == 4) { // 4 代表请求已完成
+            if (ajax_.status == 200) {
+                console.log('成功');
+                // 打印创建的 a.taxt里的文本内容
+                var res = JSON.parse(ajax_.responseText);
+                // console.log(res);
+                /* 5.调用方式 */
+                // var tmpText = doT.template(模板);
+                // tmpText(数据源ajax_.responseText);
+                var tmpText = doT.template(document.getElementById('li_tmpl').innerText);
+                slide_one.innerHTML = tmpText(res);
+                slide_three.innerHTML = tmpText(res);
+            }
+        }
+    }
+</script>
+<script id="li_tmpl" type="text/x-dot-template">
+    {{~it:value:index }} {{ for(var i = 0; i
+    < 4; i++) { }} {{ for(var k=0 ; k< 1; k++) { }} <div class="swiper-slide">
+        <a href="#"><img src="{{=value.img}}" alt="#"></a>
+        <p class="lunbo_p">{{=value.text}}</p>
+        <div><a href="#">{{=value.totalnum}}</a><a href="#">{{=value.num}}台</a></div>
+        <p class="lunbo_p1"><span>{{=value.apply}}</span>申请</p>
+        <p class="lunbo_p2">剩余时间2天</p>
+        <span class="lunbo_span_1">首发</span>
+        </div>
+        {{ } }} {{ } }} {{~}}
+</script>
 <script src='./js/help.js'></script>
 <script src="./js/doT.min.js"></script>
 
