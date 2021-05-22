@@ -869,9 +869,11 @@
 
     var bodyss = document.getElementsByClassName('body-ont-two')[0]
     var ajax_ = new XMLHttpRequest() || new ActiveXObject()
-    ajax_.open('get', 'http://192.168.31.219:3000/play/new', true);
+    ajax_.open('get', './FeHelper-20210522094858.json', true);
+    // ajax_.open('get', 'http://192.168.31.219:3000/guid/new', true);
+
     ajax_.send();
-    ajax_.onreadystatechange = function() {
+    ajax_.onreadystatechange = function () {
         if (ajax_.readyState == 4) {
             if (ajax_.status == 200) {
                 var data = JSON.parse(ajax_.responseText)
@@ -890,12 +892,13 @@
 
 
     {{~it:value:index}}
+
     <a href="">
         <div>
-            <img src="{{=value.img}}</" alt="">
+            <img src="{{=value.image}}"</" alt="">
             <p>{{=value.text}}</</p>
                 <p>{{=value.description}}</p>
-                <p>￥ {{=value.price}}</</p>
+                <p>{{=value.price}}</</p>
                     <div class="baogao">
                         <img src="../img/reply.png" alt="">&nbsp;&nbsp;<span>{{=value.like}}</</span>
                     </div>
@@ -904,5 +907,6 @@
                     </div>
         </div>
     </a>
+
     {{~}}
 </script>
