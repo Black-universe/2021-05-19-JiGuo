@@ -87,7 +87,7 @@
         </div>
     </section>
     <!-- 底部 -->
-    <!-- <footer>
+    <footer>
         <div class="guide_foot">
             <div class="foot-one">
                 <img src="../img/code.png" alt="">
@@ -150,12 +150,12 @@
            </a>
             </p>
         </div>
-    </footer> -->
+    </footer>
 </body>
 <!-- 最新 -->
-<script id="li_tmpl" type="text/x-dot-template">
+<!-- <script id="li_tmpl" type="text/html">
     {{~it:value:index}}
-    <!--最新  -->
+ 最新  
     <a href="./2.guid_2016.html">
         <div>
             <img src="{{=value.img}}" alt="">
@@ -171,7 +171,7 @@
         </div>
     </a>
     {{~}}
-</script>
+</script> -->
 <!-- 最热 -->
 <script id="li_tmpl_p" type="text/x-dot-template">
     {{~it:value:index}}
@@ -251,25 +251,6 @@
 
 
     }
-    // function register() {
-    //     var ajax_ = new XMLHttpRequest() || new ActiveXObject();
-
-    //     ajax_.open('get', 'http://192.168.31.219:3000/guid/new', true);
-    //     ajax_.send();
-    //     ajax_.onreadystatechange = function() {
-    //         if (ajax_.readyState == 4) {
-    //             if (ajax_.status == 200) {
-    //                 // 2、找到数据
-    //                 var data = JSON.parse(ajax_.responseText);
-    //                 var tmpText = doT.template(document.getElementById('li_tmpl').innerHTML);
-
-    //                 document.getElementById('list').innerHTML = tmpText(data);
-
-
-    //             }
-    //         }
-    //     }
-    // }
 </script>
 <!-- 最热 -->
 <script>
@@ -281,16 +262,10 @@
         if (ajax_.readyState == 4) {
             if (ajax_.status == 200) {
                 // 2、找到数据
-
-
-
                 var data = JSON.parse(ajax_.responseText);
                 var tmpText = doT.template(document.getElementById('li_tmpl_p').innerHTML);
                 document.getElementById('list_li').innerHTML = tmpText(data);
             }
-
-
-
         }
     }
 </script>
