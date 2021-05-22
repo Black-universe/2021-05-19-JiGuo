@@ -1,5 +1,4 @@
-[
-    {
+[{
         "image": "http://192.168.31.219:3000/img/hot4.jpg",
         "text": "Liquid Image 338 运动摄像眼镜",
         "description": "全新智能眼镜",
@@ -49,7 +48,7 @@
     },
     {
         "image": "http://192.168.31.219:3000/img/hot7.jpg",
-        "text": "风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器",
+        "text": "风光大片信手拈来！不只是快，还是一台拍照利器",
         "description": "全新智能眼镜",
         "price": "￥482",
         "like": 4,
@@ -113,7 +112,7 @@
     },
     {
         "image": "http://192.168.31.219:3000/img/k4.jpg",
-        "text": "风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器",
+        "text": "风光大片信手拈来不只是快，还是一台拍照利器",
         "description": "全新智能眼镜",
         "price": "￥1250",
         "like": 8,
@@ -177,7 +176,7 @@
     },
     {
         "image": "http://192.168.31.219:3000/img/hot10.jpg",
-        "text": "风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器",
+        "text": "风光大片信手拈来！不只是快，还是一台拍照利器",
         "description": "全新智能眼镜",
         "price": "￥8483",
         "like": 3,
@@ -195,6 +194,7 @@
         "image": "http://192.168.31.219:3000/img/k1.jpg",
         "text": "Liquid Image 338 运动摄像眼镜",
         "price": "￥6890",
+        "description": "全新智能眼镜",
         "like": 3,
         "words": 5
     },
@@ -202,6 +202,7 @@
         "image": "http://192.168.31.219:3000/img/k3.jpg",
         "text": "巴慕达 The Toaster 烤面包机",
         "price": "￥6891",
+        "description": "全新智能眼镜",
         "like": 3,
         "words": 5
     },
@@ -209,6 +210,7 @@
         "image": "http://192.168.31.219:3000/img/g1.jpg",
         "text": "Osprey小鹰户外运动专业腰包",
         "price": "￥6892",
+        "description": "全新智能眼镜",
         "like": 3,
         "words": 5
     },
@@ -216,6 +218,7 @@
         "image": "http://192.168.31.219:3000/img/g3.jpg",
         "text": "空气净化器里面学问多得惊呆你，你选对了吗？",
         "price": "￥6893",
+        "description": "全新智能眼镜",
         "like": 3,
         "words": 5
     },
@@ -223,6 +226,7 @@
         "image": "http://192.168.31.219:3000/img/hot1.jpg",
         "text": "怎么骑都不会累的智能自行车：云马 C1试骑体验",
         "price": "￥6894",
+        "description": "全新智能眼镜",
         "like": 3,
         "words": 5
     },
@@ -230,13 +234,15 @@
         "image": "http://192.168.31.219:3000/img/hot5.jpg",
         "text": "声音不是最优秀，但它形音完美的结合，足够打动人心",
         "price": "￥6895",
+        "description": "全新智能眼镜",
         "like": 3,
         "words": 5
     },
     {
         "image": "http://192.168.31.219:3000/img/hot7.jpg",
-        "text": "风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器",
+        "text": "风光大片信手拈来！不只是快，还是一台拍照利器",
         "price": "￥6896",
+        "description": "全新智能眼镜",
         "like": 3,
         "words": 5
     },
@@ -244,6 +250,7 @@
         "image": "http://192.168.31.219:3000/img/hot2.jpg",
         "text": "到底有没有完美的iPhone手机配件，答案都在这里",
         "price": "￥6897",
+        "description": "全新智能眼镜",
         "like": 3,
         "words": 5
     }
