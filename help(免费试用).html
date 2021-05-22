@@ -54,7 +54,7 @@
             <!-- 全部 -->
             <div class="help_nav_div_center_one" style='display:noblockne;'>
                 <div class="swiper-slide">
-                    <a href="#"><img src="./img/hot1.jpg" alt="#"></a>
+                    <a href="./试用.html"><img src="./img/hot1.jpg" alt="#"></a>
                     <p class="lunbo_p">巴慕达 The Toaster 烤面包机</p>
                     <div><a href="#">2032</a><a href="#">20台</a></div>
                     <p class="lunbo_p1"><span>1392</span>申请</p>
@@ -62,48 +62,6 @@
                     <span class="lunbo_span_1">首发</span>
                 </div>
 
-<<<<<<< HEAD
-=======
-                    // 渲染
-                    // http://192.168.31.219:3000
-                    // http://192.168.1.26:3000/play/new
-                    var ajax_ = new XMLHttpRequest();
-                    ajax_.open('get', 'http://192.168.31.219:3000/useing/master', true);
-                    ajax_.send();
-                    ajax_.onreadystatechange = function () {
-                        if (ajax_.readyState == 4) { // 4 代表请求已完成
-                            if (ajax_.status == 200) {
-                                console.log('成功');
-                                // 打印创建的 a.taxt里的文本内容
-                                var res = JSON.parse(ajax_.responseText);
-                                // console.log(res);
-                                /* 5.调用方式 */
-                                // var tmpText = doT.template(模板);
-                                // tmpText(数据源ajax_.responseText);
-                                var tmpText = doT.template(document.getElementById('li_tmpl').innerText);
-                                slide_one.innerHTML = tmpText(res);
-                            }
-                        }
-                    }
-                </script>
-                <script id="li_tmpl" type="text/x-dot-template">
-
-                    {{~it:value:index }}
-                    {{ for (var i = 0; i <4; i++) { }} 
-                    {{ for (var j = 0; j <1; j++) { }} 
-                    <div class="swiper-slide">
-                        <a href="#"><img src="{{=value.img}}" alt="#"></a>
-                        <p class="lunbo_p">{{=value.text}}</p>
-                        <div><a href="#">{{=value.totalnum}}</a><a href="#">{{=value.num}}台</a></div>
-                        <p class="lunbo_p1"><span>{{=value.apply}}</span>申请</p>
-                        <p class="lunbo_p2">剩余时间2天</p>
-                        <span class="lunbo_span_1">首发</span>
-                    </div>
-                    {{}}}
-                    {{}}}
-                    {{~}}
-                </script>
->>>>>>> b3abf080d1ace6a0b3c8896ea3b906dc36ae0ea2
                 <!-- <div class="swiper-slide">
                     <a href="#"><img src="./img/hot2.jpg" alt="#"></a>
                     <p class="lunbo_p">巴慕达 The Toaster 烤面包机</p>
@@ -739,7 +697,7 @@
 <script id="li_tmpl" type="text/x-dot-template">
     {{~it:value:index }} {{ for(var i = 0; i
     < 4; i++) { }} {{ for(var k=0 ; k< 1; k++) { }} <div class="swiper-slide">
-        <a href="#"><img src="{{=value.img}}" alt="#"></a>
+        <a href="./试用.html"><img src="{{=value.img}}" alt="#"></a>
         <p class="lunbo_p">{{=value.text}}</p>
         <div><a href="#">{{=value.totalnum}}</a><a href="#">{{=value.num}}台</a></div>
         <p class="lunbo_p1"><span>{{=value.apply}}</span>申请</p>
