@@ -866,14 +866,13 @@
 </html>
 <script>
     var bodys = document.getElementsByClassName('body-ont-one')[0]
-
     var bodyss = document.getElementsByClassName('body-ont-two')[0]
     var ajax_ = new XMLHttpRequest() || new ActiveXObject()
     ajax_.open('get', './FeHelper-20210522094858.json', true);
     // ajax_.open('get', 'http://192.168.31.219:3000/guid/new', true);
 
     ajax_.send();
-    ajax_.onreadystatechange = function () {
+    ajax_.onreadystatechange = function() {
         if (ajax_.readyState == 4) {
             if (ajax_.status == 200) {
                 var data = JSON.parse(ajax_.responseText)
@@ -884,26 +883,24 @@
         }
     }
 </script>
+
 <script src="../doT.min.js"></script>
-
-
 <script id="li_tmpl" type="text/x-dot-template">
-
 
 
     {{~it:value:index}}
 
     <a href="">
         <div>
-            <img src="{{=value.image}}"</" alt="">
+            <img src="../img/bg3.jpg" data-src="{{=value.image}}" </ " alt=" ">
             <p>{{=value.text}}</</p>
                 <p>{{=value.description}}</p>
                 <p>{{=value.price}}</</p>
-                    <div class="baogao">
-                        <img src="../img/reply.png" alt="">&nbsp;&nbsp;<span>{{=value.like}}</</span>
+                    <div class="baogao ">
+                        <img src="../img/reply.png " alt=" ">&nbsp;&nbsp;<span>{{=value.like}}</</span>
                     </div>
-                    <div class="baogao2">
-                        <img src="../img/xin.png" alt="">&nbsp;&nbsp;<span>{{=value.words}}</</span>
+                    <div class="baogao2 ">
+                        <img src="../img/xin.png " alt=" ">&nbsp;&nbsp;<span>{{=value.words}}</</span>
                     </div>
         </div>
     </a>
