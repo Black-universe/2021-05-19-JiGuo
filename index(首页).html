@@ -814,6 +814,8 @@
             <img src="./img/back.png" alt="">
         </div>
     </a>
+    <!-- 小精灵 -->
+    <img src="./img/小精灵.gif" alt="" id="gif">
 </body>
 <script src='./js/index.js'></script>
 <script src='./swiper/swiper-bundle.min.js'></script>
@@ -874,7 +876,6 @@
         };
     }
     /* 倒计时 */
-
     function tim() {
         var inTime = new Date();
         var newTime = new Date('2021-06-01');
@@ -891,3 +892,16 @@
 
 </html>
 <script src="./js/正在加载中.js"></script>
+<!-- 鼠标小天使 -->
+<script>
+    var imgs = document.getElementById('gif');
+    imgs.style.position = 'absolute';
+    imgs.style.width = 160 + 'px';
+    imgs.style.height = 160 + 'px';
+    document.addEventListener('mousemove', function(e) {
+        // 不要忘记为 left 和 top 加上px单位  采取拼接的方式加上
+        imgs.style.left = e.pageX - 100 + 'px';
+        imgs.style.top = e.pageY + 20 + 'px';
+
+    })
+</script>
