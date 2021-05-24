@@ -893,7 +893,7 @@
 
     <a href="">
         <div>
-            <img  src="../img/懒加载.png" data-src="{{=value.image}}"</" alt="">
+            <img  src="../img/bg3.jpg" data-src="{{=value.image}}"</" alt="">
             <p>{{=value.text}}</</p>
                 <p>{{=value.description}}</p>
                 <p>{{=value.price}}</</p>
@@ -932,7 +932,7 @@
             console.log(scrollTop);
             for (var i = n; i < num; i++) {
                 if (img[i].offsetTop < seeHeight + scrollTop) {
-                    if (img[i].getAttribute("src") == "../img/懒加载.png") {
+                    if (img[i].getAttribute("src") == "../img/bg3.jpg") {
                         img[i].src = img[i].getAttribute("data-src");
                     }
                     n = i + 1;
